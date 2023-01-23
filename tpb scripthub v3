@@ -1,3 +1,5 @@
+-- unobfuscated because i dont really care
+
 local plays = game.Players.LocalPlayer
   function netless()
     spawn(function()

@@ -42,7 +42,7 @@ local GUI = Mercury:Create{
   Name = "TPB ScriptHub",
   Size = UDim2.fromOffset(600, 400),
   Theme = Mercury.Themes.Dark,
-  Link = "https://github.com/AlexTPB/releases/tpb-scripthub-v3"
+  Link = "https://github.com/AlexTPB/releases/blob/main/tpb-scripthub-v3"
 }
 GUI:Credit{
 	Name = "AlexTPB",

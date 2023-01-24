@@ -37,7 +37,7 @@ local plays = game.Players.LocalPlayer
       end)
   end
 ------------------------------------------------------------------------------------------------------------------------
-local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexTPB/mercuryedit/main/mercurylib.lua"))()
 local GUI = Mercury:Create{
   Name = "TPB ScriptHub",
   Size = UDim2.fromOffset(600, 400),
@@ -72,59 +72,65 @@ GUI:Notification{
 }
 end
 local Tab = GUI:Tab{
-	Name = "Hubs-and-GUIs",
-	Icon = "rbxassetid://4483345998"
+	Name = "Hubs and GUIs",
+	Icon = "rbxassetid://12255204088"
 }
-Tab:Button{
+local Section = Tab:Section{
+	Name = "Hubs",
+}
+Section:Button{
 	Name = "Syntax V1.3 (Key: Syntaxontop)",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/AlexTPB/somethingeeeee/main/SYNTAX%20V1.3.txt'),true))()
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Syntax V2 (Key: Syntaxbesthub)",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/AlexTPB/somethingeeeee/main/syntax_v2.lua'),true))()
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Syntax V3 (Key: SyntaxV3Free)",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/AlexTPB/somethingeeeee/main/syntax%20v3'),true))()
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Nightmare Hub V2",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet(('https://pastefy.ga/lrjtanrp/raw'),true))()
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Pendulum Hub",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "HatHub V1",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet("https://pastebin.com/raw/1Cjz1RMH"))();
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "HatHub V2",
 	Description = nil,
 	Callback = function() 
     loadstring(game:HttpGet("https://textbin.net/raw/rvohv1nvuf"))();
   end
 }
-Tab:Button{
+local Section = Tab:Section{
+	Name = "GUIs",
+}
+Section:Button{
 	Name = "Kidnap Instantly",
 	Description = nil,
 	Callback = function() 
@@ -133,10 +139,13 @@ Tab:Button{
 }
 
 local Tab = GUI:Tab{
-	Name = "FE-Free-Hats",
-	Icon = "rbxassetid://4483345998"
+	Name = "FE Scripts",
+	Icon = "rbxassetid://11570895459"
 }
-Tab:Button{
+local Section = Tab:Section{
+	Name = "FE Free Hats",
+}
+Section:Button{
 	Name = "Copy FE Mech Hats to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -150,7 +159,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Mech - R6",
 	Description = nil,
 	Callback = function() 
@@ -166,7 +175,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Face Hats to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -180,7 +189,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Face (LEAKED) - R6",
 	Description = nil,
 	Callback = function() 
@@ -196,7 +205,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Bird Hats to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -210,7 +219,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Bird - R6",
 	Description = nil,
 	Callback = function() 
@@ -226,7 +235,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Finger V2 Hats to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -240,7 +249,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Finger V2 - R6",
 	Description = nil,
 	Callback = function() 
@@ -256,7 +265,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Dog Hats to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -270,7 +279,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Dog - R6",
 	Description = nil,
 	Callback = function() 
@@ -286,7 +295,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Friend Hats to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -300,7 +309,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Friend - R6",
 	Description = nil,
 	Callback = function() 
@@ -316,7 +325,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Hang Doll to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -330,7 +339,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Hang Doll (LEAKED) - R6",
 	Description = nil,
 	Callback = function() 
@@ -346,7 +355,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Zeon Glitcher to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -360,7 +369,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Zeon Glitcher (LEAKED) - R6",
 	Description = nil,
 	Callback = function() 
@@ -376,7 +385,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Zombie to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -390,7 +399,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Zombie - R6",
 	Description = nil,
 	Callback = function() 
@@ -406,7 +415,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Block Rider to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -420,7 +429,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Block Rider - R6",
 	Description = nil,
 	Callback = function() 
@@ -436,7 +445,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Little People to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -450,7 +459,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Little People - R6",
 	Description = nil,
 	Callback = function() 
@@ -466,7 +475,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Spooder to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -480,7 +489,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Spooder - R6",
 	Description = nil,
 	Callback = function() 
@@ -496,7 +505,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Baby to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -510,7 +519,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Baby - R6",
 	Description = nil,
 	Callback = function() 
@@ -526,7 +535,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Pet Snakes to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -540,7 +549,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Pet Snakes - R6",
 	Description = nil,
 	Callback = function() 
@@ -556,7 +565,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Spy Drone to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -570,7 +579,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Spy Drone - R6",
 	Description = nil,
 	Callback = function() 
@@ -586,7 +595,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Snake but Loong to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -600,7 +609,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Snake but Loong - R6",
 	Description = nil,
 	Callback = function() 
@@ -616,7 +625,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Chat for Someone to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -630,7 +639,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Chat for Someone - R6",
 	Description = nil,
 	Callback = function() 
@@ -646,11 +655,10 @@ Tab:Button{
       }
   end
 }
-local Tab = GUI:Tab{
-	Name = "FE-Paid-Hats",
-	Icon = "rbxassetid://4483345998"
+local Section = Tab:Section{
+	Name = "FE Paid Hats",
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Soldier AI to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -664,7 +672,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Soldier AI - R6",
 	Description = nil,
 	Callback = function() 
@@ -680,7 +688,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Dummy to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -694,7 +702,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Dummy - R6",
 	Description = nil,
 	Callback = function() 
@@ -710,7 +718,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE Floppa Shirt to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -724,7 +732,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Floppa - R6",
 	Description = nil,
 	Callback = function() 
@@ -740,7 +748,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Copy FE GhostRider to Clipboard",
 	Description = nil,
 	Callback = function()
@@ -754,7 +762,7 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE GhostRider - R6",
 	Description = nil,
 	Callback = function() 
@@ -770,11 +778,10 @@ Tab:Button{
       }
   end
 }
-local Tab = GUI:Tab{
-	Name = "FE-No-Hats",
-	Icon = "rbxassetid://4483345998"
+local Section = Tab:Section{
+	Name = "FE No Hats",
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Neko Maid - R6",
 	Description = nil,
 	Callback = function() 
@@ -790,7 +797,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Nameless Animations V5 - R6",
 	Description = nil,
 	Callback = function() 
@@ -806,7 +813,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Sturdy (BUGGY) - R15",
 	Description = nil,
 	Callback = function() 
@@ -822,7 +829,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Snake - R6",
 	Description = nil,
 	Callback = function() 
@@ -838,11 +845,10 @@ Tab:Button{
       }
   end
 }
-local Tab = GUI:Tab{
-	Name = "FE-Edited-Hats",
-	Icon = "rbxassetid://4483345998"
+local Section = Tab:Section{
+	Name = "FE Edited Hats",
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Elio Blasio | Dev Deck - R6",
 	Description = nil,
 	Callback = function() 
@@ -858,7 +864,7 @@ Tab:Button{
       }
   end
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Elio Blasio | METAL x LIGHTSEER 77 - R6",
 	Description = nil,
 	Callback = function() 
@@ -874,11 +880,10 @@ Tab:Button{
       }
   end
 }
-local Tab = GUI:Tab{
-	Name = "FE-Custom-Hats",
-	Icon = "rbxassetid://4483345998"
+local Section = Tab:Section{
+	Name = "FE Custom Hats",
 }
-Tab:Button{
+Section:Button{
 	Name = "Execute FE Build | Uses any Hats! - R6",
 	Description = nil,
 	Callback = function() 
@@ -896,9 +901,12 @@ Tab:Button{
 }
 local Tab = GUI:Tab{
 	Name = "Misc",
-	Icon = "rbxassetid://4483345998"
+  Icon = "rbxassetid://5107172100"
 }
-Tab:Button{
+local Section = Tab:Section{
+	Name = "Netless",
+}
+Section:Button{
 	Name = "Netless",
 	Description = nil,
 	Callback = function() 
@@ -907,33 +915,21 @@ Tab:Button{
         netlessr15()
   end
 }
-Tab:Button{
+local Section = Tab:Section{
+	Name = "Character",
+}
+Section:Button{
 	Name = "Normal Reset Character",
 	Description = nil,
 	Callback = function() 
         game.Players.LocalPlayer.Character.Humanoid.Health = 0
   end
 }
-Tab:Button{
-	Name = "Rejoin Server",
-	Description = nil,
-	Callback = function() 
-        loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
-  end
-}
-Tab:Button{
-	Name = "Server Hop",
-	Description = nil,
-	Callback = function() 
-        local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
-        module:Teleport(game.PlaceId)
-  end
-}
-Tab:Button{
+Section:Button{
 	Name = "Open Character Sliders Options",
 	Description = nil,
 	Callback = function() 
-    Tab:Slider{
+    Section:Slider{
       Name = "Speed",
       Default = 16,
       Min = 0,
@@ -942,7 +938,7 @@ Tab:Button{
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
       end
     }
-    Tab:Slider{
+    Section:Slider{
       Name = "Jump Height",
       Default = 50,
       Min = 0,
@@ -951,7 +947,7 @@ Tab:Button{
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
       end
     }
-    Tab:Button{
+    Section:Button{
       Name = "Set Speed and Jump Height to Default",
       Description = nil,
       Callback = function() 
@@ -961,25 +957,46 @@ Tab:Button{
     }
   end
 }
-Tab:Button{
+local Section = Tab:Section{
+	Name = "Server",
+}
+Section:Button{
+	Name = "Rejoin Server",
+	Description = nil,
+	Callback = function() 
+        loadstring(game:HttpGet("https://pastebin.com/raw/1gtVMUz3"))()
+  end
+}
+Section:Button{
+	Name = "Server Hop",
+	Description = nil,
+	Callback = function() 
+        local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+        module:Teleport(game.PlaceId)
+  end
+}
+local Section = Tab:Section{
+	Name = "Others",
+}
+Section:Button{
 	Name = "Open Other Scripts",
 	Description = nil,
 	Callback = function() 
-    Tab:Button{
+    Section:Button{
       Name = "Infinite Yield FE",
       Description = nil,
       Callback = function() 
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
       end
     }
-    Tab:Button{
+    Section:Button{
       Name = "CMD X",
       Description = nil,
       Callback = function() 
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
       end
     }
-    Tab:Button{
+    Section:Button{
       Name = "Simple Spy",
       Description = nil,
       Callback = function() 

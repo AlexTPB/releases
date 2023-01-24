@@ -36,6 +36,9 @@ local plays = game.Players.LocalPlayer
           Duration = 0.5;
       end)
   end
+local function chat(text)
+  game.StarterGui:SetCore('ChatMakeSystemMessage', {Text = text, Colour = Color3.fromRGB(255, 5, 5), Font = Enum.Font.ArialBold})
+end
 ------------------------------------------------------------------------------------------------------------------------
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexTPB/mercuryedit/main/mercurylib.lua"))()
 local GUI = Mercury:Create{
@@ -61,14 +64,18 @@ if game.Players.LocalPlayer.UserId == 212940700 then
 		Title = "Welcome back TPB!",
 		Text = "Scripthub Yes yes!",
 		Duration = 2,
-		Callback = function() end
+		Callback = function()
+    end
 	}
 else
 GUI:Notification{
 	Title = "Hello there!",
 	Text = "Thank you for trying TPB ScriptHub!",
 	Duration = 2,
-	Callback = function() end
+	Callback = function()
+    chat("Hello and Welcome! Thank you for trying TPB ScriptHub!")
+    chat("Current Version: v3")
+  end
 }
 end
 local Tab = GUI:Tab{

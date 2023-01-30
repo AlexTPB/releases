@@ -507,7 +507,7 @@ Section:Button{
       Callback = function()
         netless()
         wait(2)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts/main/FE%20Spooder.Lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts/main/FE%20Spider%20(UPDATED).lua"))()
       end
       }
   end

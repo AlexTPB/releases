@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexTPB/releases/main/tpb%20scripthub%20v3"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexTPB/releases/main/tpb_scripthub_v3"))()

@@ -1,0 +1,81 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local a = Library.CreateLib("tpb's AUT Emotes Pack GUI", "BloodTheme")
+local e = a:NewTab("Emotes")
+local b = e:NewSection("AUT Emotes Pack:")
+
+b:NewButton("Smooth Moves","Plays The Emote",function()
+    local args = {[1] = "SmoothMoves"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Smooth Criminal","Plays The Emote",function()
+    local args = {[1] = "SmoothCriminal"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Kazotsky","Plays The Emote",function()
+    local args = {[1] = "Kazotsky"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("IevanPolkka","Plays The Emote",function()
+    local args = {[1] = "IevanPolkka"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("God-Step","Plays The Emote",function()
+    local args = {[1] = "God-Step"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("90s","Plays The Emote",function()
+    local args = {[1] = "90s"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Rodeo","Plays The Emote",function()
+    local args = {[1] = "Rodeo"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Cshearer","Plays The Emote",function()
+    local args = {[1] = "Cshearer"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Sweet Dreams","Plays The Emote",function()
+    local args = {[1] = "Sweet Dreams"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Peanut","Plays The Emote",function()
+    local args = {[1] = "Peanut"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Troll","Plays The Emote",function()
+    local args = {[1] = "Troll"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Do The Odyssey","Plays The Emote",function()
+    local args = {[1] = "Do The Odyssey"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Gangnam Style","Plays The Emote",function()
+    local args = {[1] = "Gangnam Style"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("DIO's Talent","Plays The Emote",function()
+    local args = {[1] = "DIO's Talent"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Futsal Shuffle","Plays The Emote",function()
+    local args = {[1] = "Futsal Shuffle"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Nae-Nae","Plays The Emote",function()
+    local args = {[1] = "Nae-Nae"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Griddy","Plays The Emote",function()
+    local args = {[1] = "Griddy"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+b:NewButton("Distraction Dance","Plays The Emote",function()
+    local args = {[1] = "Distraction Dance"}
+    game:GetService("ReplicatedStorage"):WaitForChild("ReplicatedModules"):WaitForChild("KnitPackage"):WaitForChild("Knit"):WaitForChild("Services"):WaitForChild("EmoteService"):WaitForChild("RF"):WaitForChild("Play"):InvokeServer(unpack(args))
+end)
+
+local re = a:NewTab("Credits")
+local f = re:NewSection("Made by tpb.mp4#6086")
+f:NewLabel("UI Library: Kavo")
